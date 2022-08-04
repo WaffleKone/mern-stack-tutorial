@@ -8,7 +8,7 @@
     "react-router-dom": "^6.3.0"
   },
   "scripts":{
-    "preinstall": "cd $()",
-    "start": "npm start --prefix ./client"
+    "start": "(cd client && npm run start)",
+    "build": "(cd server && npm run start)"
   }
 }
