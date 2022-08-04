@@ -3,12 +3,6 @@ This project is a tutorial made by [MongoDB](https://www.mongodb.com/languages/m
 
 
 ## How To Run
-Create a MongoAtlas URI connection parameter in `mern/server/config.env` with your Atlas URI:
-
-```
-ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-PORT=5000
-```
 
 ### Start The Server
 ```
