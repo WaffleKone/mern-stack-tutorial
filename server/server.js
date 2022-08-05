@@ -5,6 +5,7 @@ const cors = require('cors');
 require('dotenv').config({path: './config.env'});
 const port = process.env.PORT || 5000; // If can't find the right port from env file, use 5000 instead using the OR operator.
 
+app.use(express.static('./public'));
 app.use(cors());
 app.use(express.json());
 app.use(require('./routes/record'));
