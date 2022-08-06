@@ -23,7 +23,7 @@ export default function RecordList() {
 
     useEffect(()=> {
         async function getRecords() {
-            const response = await fetch(`http://localhost:5000/record`);
+            const response = await fetch(`http://localhost:${process.env.PORT}/record`);
 
             if (!response.ok) {
                 const message = `An error occurred: ${response.statusText}`
@@ -40,7 +40,7 @@ export default function RecordList() {
 
 // method to delete record
     async function deleteRecord(id) {
-        await fetch(`http://localhost:5000/${id}`, {
+        await fetch(`http://localhost:${process.env.PORT}/${id}`, {
           method: "DELETE"
         });
       

@@ -22,7 +22,7 @@ export default function Create() {
 
         const newPerson = {...form};
 
-        await fetch('http://localhost:5000/record/add', {
+        await fetch(`http://localhost:${process.env.PORT}/record/add`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
