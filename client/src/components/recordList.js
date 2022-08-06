@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-require('dotenv').config({path: './.env'});
+require('dotenv').config({path: '../../../.env'});
 
 const Record = (props) => (
     <tr>

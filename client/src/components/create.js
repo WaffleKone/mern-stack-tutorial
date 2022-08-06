@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router'
-require('dotenv').config({path: './.env'});
+require('dotenv').config({path: '../../../.env'});
 
 export default function Create() {
     const [form, setForm] = useState({
