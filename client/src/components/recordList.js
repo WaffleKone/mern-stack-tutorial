@@ -24,7 +24,7 @@ export default function RecordList() {
 
     useEffect(()=> {
         async function getRecords() {
-            const response = await fetch(`http://localhost:${process.env.PORT}/record`);
+            const response = await fetch(`https://mern-project-test-tutorial.herokuapp.com/record`);
 
             if (!response.ok) {
                 const message = `An error occurred: ${response.statusText}`
@@ -41,7 +41,7 @@ export default function RecordList() {
 
 // method to delete record
     async function deleteRecord(id) {
-        await fetch(`http://localhost:${process.env.PORT}/${id}`, {
+        await fetch(`https://mern-project-test-tutorial.herokuapp.com}/${id}`, {
           method: "DELETE"
         });
       
